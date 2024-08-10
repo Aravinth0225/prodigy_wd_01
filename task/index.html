@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar with Laptop Specs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/logo.jpg" >
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Laptop'S E-Commerce </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" onclick="showContent('home')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('whatsNew')">What's New</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('brand')">Brand</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('accessories')">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('aboutUs')">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('contactUs')">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Home Content -->
+<div id="home" class="content-section">
+    <div class="home-bg p-4">
+        <h2 style="font-family: sans-serif; font-style: italic; color: black;">Welcome to Laptop Specs</h2>
+        <p style="font-style: oblique; color: black;">Explore the best laptops available in the market today. Click on the tabs above to see more details about the latest models, brands, accessories, and more!</p>
+        <img src="/cl lap img.jpg" class="img-fluid" alt="Laptops">
+    </div>
+</div>
+
+          <!-- What's New Content -->
+<div id="whatsNew" class="content-section" style="display: none;">
+    <div class="whats-new-bg p-4">
+        <h2 style="font-style: italic;">What's New</h2>
+        <p>Check out the latest laptops released in the market. Here are some of the top picks:</p>
+        <ul style="font-family: sans-serif;">
+            <li>Dell XPS 13: 11th Gen Intel Core i7, 16GB RAM, 512GB SSD, 13.3-inch FHD+ display.</li>
+            <li>Apple MacBook Air M2: Apple M2 chip, 8GB RAM, 256GB SSD, 13.6-inch Retina display.</li>
+            <li>HP Spectre x360: Intel Evo 12th Gen i7, 16GB RAM, 1TB SSD, 14-inch OLED display.</li>
+        </ul>
+        <img src="/lap1.jpg" class="img-fluid" alt="New Laptops">
+    </div>
+</div>
+
+            <!-- Brand Content -->
+<div id="brand" class="content-section" style="display: none;">
+    <div class="brand-bg p-4">
+        <h2 style="font-style: italic;" >Top Brands</h2>
+        <p>Here are some of the most trusted laptop brands in the industry:</p>
+        <ul style="font-family: sans-serif;"">
+            <li>Dell: Known for durability and excellent customer service.</li>
+            <li>Apple: Renowned for premium build quality and seamless ecosystem.</li>
+            <li>HP: Offers a wide range of laptops catering to different needs.</li>
+            <li>Lenovo: Famous for its reliable business laptops.</li>
+        </ul>
+        <img src="/lap.jpg" class="img-fluid" alt="Laptop Brands">
+    </div>
+</div>
+
+
+           <!-- Accessories Content -->
+<div id="accessories" class="content-section" style="display: none;">
+    <div class="accessories-bg p-4">
+        <h2 style="font-family: sans-seri; font-style: italic;">Accessories</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box-model">
+                    <h3 style="font-family: sans-seri; font-style: italic;" >External Solid State Drive</h3>
+                    <p>1TB, 2TB, and more to store all your data.</p>
+                    <img src="/SSD.jpg" class="img-fluid" alt="External Hard Drive">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box-model">
+                    <h3 style="font-family: sans-seri; font-style: italic;">Mouse</h3>
+                    <p>Latest  design, wireless, and gaming options.</p>
+                    <img src="/Mouse.jpg" class="img-fluid" alt="Mouse">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box-model">
+                    <h3 style="font-family: sans-seri; font-style: italic;" >Laptop Stand</h3>
+                    <p>Adjustable and portable stands for better posture.</p>
+                    <img src="/LPS.jpg" class="img-fluid" alt="Laptop Stand">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- About Us Content -->
+<div id="aboutUs" class="content-section" style="display: none;">
+    <div class="about-us-bg p-4">
+        <h2 style="font-style: italic;">About Us</h2>
+        <p>We are dedicated to bringing you the best information about laptops, helping you choose the right model for your needs. Our team of experts continuously reviews and updates the latest laptop specs and accessories.</p>
+        <img src="/about us.jpg" class="img-fluid" alt="About Us">
+    </div>
+</div>
+
+
+           <!-- Contact Us Content -->
+<div id="contactUs" class="content-section" style="display: none;">
+    <div class="contact-us-bg p-4">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out to us for any inquiries or feedback.</p>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
